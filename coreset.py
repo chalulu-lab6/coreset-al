@@ -29,8 +29,11 @@ class Coreset_Greedy:
         self.already_selected = []
 
         # reshape
-        feature_len = self.all_pts[0].shape[1]
-        self.all_pts = self.all_pts.reshape(-1,feature_len)
+        # feature_len = self.all_pts[0].shape[1]
+        #  self.all_pts = self.all_pts.reshape(-1,feature_len)
+
+        # Modification Charles 20241220 (No reshape)
+        self.all_pts = self.all_pts
 
         # self.first_time = True
 
