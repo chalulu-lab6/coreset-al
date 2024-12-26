@@ -32,7 +32,7 @@ class Coreset_Greedy:
         # feature_len = self.all_pts[0].shape[1]
         #  self.all_pts = self.all_pts.reshape(-1,feature_len)
 
-        # Modification Charles 20241220 (No reshape)
+        # Modification from Charles 20241220 (No reshape to adapt to AL pipeline)
         self.all_pts = self.all_pts
 
         # self.first_time = True
